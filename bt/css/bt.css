@@ -1,0 +1,9 @@
+.jumbotron{
+    background-image:url("../assets/pic1.jpg");
+    color:rgb(38, 123, 138);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    height: 50vh;
+    
+    }
