@@ -1,0 +1,27 @@
+#section1 div:first-child {
+    background-image: url("assets/a.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#section2 div:first-child {
+    background-image: url("assets/b.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#section3 div:first-child {
+    background-image: url("assets/c.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#section4 div:first-child {
+    background-image: url("assets/d.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
