@@ -1,0 +1,18 @@
+body {
+    font-family:思源黑體 , 微軟正黑體 , 蘋方黑體;
+}
+
+ul {
+    font-family: helvetica;
+}
+.jumbotron{
+    color:rgb(33, 82, 172);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    height: 50vh;
+    text-align: justify;
+    margin-left: 25vh;
+    margin-right: 25vh;
+    
+    }
