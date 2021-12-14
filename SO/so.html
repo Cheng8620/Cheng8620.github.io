@@ -1,0 +1,88 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>2022迎曙光地點推薦</title>
+  <!-- put your css and js here -->
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="css/so.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <head>
+    <meta charset="utf-8">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+  </head>
+
+<body>
+  <div class="jumbotron jumbotron-fluid text-align">
+    <div class="container">
+      <h1>輕鬆登百岳、追2022第一道曙光！</h1>
+      <p class="lead">
+        <h4>圖、文／程莉茜</h4>
+
+        <h3>2021年已步入尾聲，大家是否已經決定要在何處迎接嶄新的2022年了呢？</h3>
+        <h3>本文在此推薦合歡山主峰為一絕佳選擇。</h3>
+        <h3>合歡山主峰，標高3417公尺。</h3>
+        <h3>登頂時間來回約2小時，登山口位於昆陽與武嶺之間，停車方便。
+          合歡山主峰早期為軍事基地，遷撤後原本的軍用車道改為行人步道，故寬敞易行走。合歡山主峰雖為百岳，但其實老少咸宜，惟若患有高山症記得事先服用藥物。
+          此外，在登頂之前可以先到不遠的鳶峰觀星平台觀賞浩瀚銀河，以漫天星斗結束2021年，再以燦爛朝陽迎接2022年。</h3>
+        </p>
+    </div>
+  </div>  
+
+  <div style="height:300vh;">
+    <img class="opa"
+      src="https://lh3.googleusercontent.com/27xqJZduF9sAUcYX-bWbOwt_nJAmPuYMWSOBqOmx7IJxJtny_GGPGfLxrH7z3q78X42ZLr3tsnlNvO92t8NxfmCe-NFxARG0Sow0lJ6s8h_5P6Ak6vdsIyxKELsyxrzdf6D3NCWF4w=w1800"
+      style="position:fixed;opacity:1;width:100vw;z-index:3" data-pos="1" ;>
+    <img class="opa"
+      src="https://lh3.googleusercontent.com/ZOPQqttNRKWjHTithJGxCIFGwpyEh-uIupJVISO-X3mlW5wcCcH81k4jbAdXmreqGhaOBn-Pb0r7xYPA2u-zCSWDn_rgRTB4q7Mf4vp7tEz4UXRb5bNpQ0mgJLoss0OddFHuaDC6-w=w1800"
+      style="position:fixed;opacity:1;width:100vw;z-index:2" data-pos="2" ;>
+    <img
+      src="https://lh3.googleusercontent.com/zgb-t02zoOWl08yxEV7JqKRwVfxJJY5hX3eYP-5TyjEFWlw-FiT-Q4oTsItEA7MFogi5wh4P3DG_5lZNu9C7_32l5_kJNG05xuq40n1h_PCOW4IZ6fJDmBPklyBwigjFd92o8QOYCw=w1800"
+      style="position:fixed;opacity:1;width:100vw;z-index:1" data-pos="3">
+  </div>
+  <div style=" height:100vh;background-color: gray"></div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+  <script>
+    $(function () {
+      var scrollable = $(document).height() - $(window).height();
+      console.log(scrollable);
+      $(window).scroll(function () {
+        var scrolled = $(document).scrollTop();
+        $(".opa").each(function (index) {
+          $(this).css("opacity", $(this).data("pos") - (2 * scrolled) / scrollable);
+          console.log(
+            "[" + scrolled / scrollable + "]" + index + ": " + $(this).css("opacity")
+          );
+        });
+      });
+    });
+
+    // $(function () {
+    // var winh = $(window).height();
+    // $(window).scroll(function () {
+    // $(".slideanimate").each(function () {
+    // var scrolled = $(window).scrollTop();
+    // var objpos = $(this).offset().top;
+    // if (objpos < scrolled + winh * 0.8) { $(this).addClass("slide"); } }); }); });
+  </script>
+</body>
+
+</html>
