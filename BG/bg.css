@@ -1,0 +1,10 @@
+#bg {
+    background-image: url("assets/new.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 180vw;
+    background-position: 0 0;
+    }
+
+h4{color: darkgoldenrod;font-family:DFKai-sb,Microsoft JhengHei;background-color: whitesmoke;}
+p{color: black;font-family:DFKai-sb,Microsoft JhengHei;background-color: whitesmoke;}
